@@ -1,0 +1,342 @@
+*{
+    font-family:;
+}
+head{
+    
+}
+body {
+    font-family:'Source Sans Pro', sans-serif;
+    color:black;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration:none;   
+}
+.topo {
+    height: 20px;
+    background-color: yellowgreen;
+    text-align:right;
+    font-size: 100%;
+    font-weight:bold;
+    padding-right: 70px;
+    padding-bottom: 2px;
+    color:white;
+}
+.topotext {
+    color:white;}
+
+.topotext:hover {
+    color: black
+}
+
+        .menuinterior{
+            max-width: 1000px;
+            height: auto;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+        }
+        
+        .logo {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            margin: auto;
+        }
+        .menumobile {
+            display:none;
+            margin: 20px;
+        }
+        .menu {
+            display:flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: auto;
+        }
+        .menu ul{
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li{
+            list-style: none;
+            font-weight: bold;
+        }
+        nav a {
+            display: block;
+            color: black;
+            padding: 10px;
+            text-transform: uppercase;
+            }
+        
+        nav a:hover {
+            background-color: white;
+            color: yellowgreen;
+
+        }
+
+div ul li {
+list-style-image: url(Imagens/icon_2.png);
+        }
+
+.banner{
+}
+
+.janela0 {
+    height: auto;
+    text-align: center;
+    color:#3F3F3F;
+    margin:20px;
+    
+    
+}
+        .minijanelas{
+            max-width: 1000px;
+            margin: auto;
+
+        }
+        .mini {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 30px;
+        }  
+
+        .janmini{
+            flex: 1;
+            margin: 10px;
+            padding: 30px;
+            text-align: center;
+            font-size: 100%;
+            color:#3F3F3F;
+            border-style:solid;
+            border-width: thin;
+            border-color:lightgrey;
+            background-color: white;
+            
+        }
+        .janmini:hover{
+            background-color: midnightblue;
+            color: white;
+        }
+        .imagjan{
+            width:100px;
+            height:100px;
+            margin-bottom: 10px;
+        }
+        .minititulo {
+            font-weight: bold;
+            
+        }
+.rastreamento {
+    background-color:#F5F5F5;
+    font-weight: bold;
+    
+}
+.rast1{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+
+.rast2{ 
+    flex:2;
+    
+}
+.localize {
+    width:200px ;
+    text-align: center;
+    font-size:100%;
+    background-color:darkblue;
+    color: white;
+    padding:10px;
+    margin: 30;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.localize:hover {
+    background-color:dodgerblue}
+
+.imgrastreador {
+    flex:1;
+}
+ 
+        .beneficios {
+            background-image:url(Imagens/img_site/3.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: white;
+        }
+       .janela2 {
+            background: rgb(0,0,0,0.6);
+            
+        }
+        .benef{
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+        }
+        .janela20,
+        .janela22{
+            display: flex;
+            width: 350;
+            margin-top: 20px;
+            margin-bottom: 20;
+        }
+        .janela20{
+            border-bottom: 2px solid #65655F;
+            
+            
+
+        }
+        .janela23{
+            width: 300
+        }
+        .imagbenefi{
+            width: 35%;
+            height: 100px;
+            background-image: url(Imagens/icon_oficina12.png);
+            background-repeat: no-repeat;
+            background-size: 100px 90px;
+        }
+        .imagbenefi:hover{
+            background-image: url(Imagens/icon_oficina1.png);
+            background-size: 100px 90px;
+            background-repeat: no-repeat;
+        }
+         .imagbenefi2{
+            width: 35%;
+            height: 100px;
+            background-image: url(Imagens/icon_oficina13.png);
+            background-repeat: no-repeat;
+            background-size: 100px 100px;
+            
+        }
+        .imagbenefi2:hover{
+            background-image: url(Imagens/icon_oficina.png);
+            background-size: 100px 100px;
+            background-repeat: no-repeat;
+        }
+
+.janela3 {
+    max-width: 1000px;
+    height: 400px;
+    margin: auto;
+    background-color: white
+}
+.janelablog {
+    max-width: 1000px;
+    height: 400px;
+    margin: auto;
+}
+            
+            .contato {
+                max-width: 1000px;
+                margin: auto;
+                
+            }
+            .contatotitulo{
+                text-align: center;
+                font-size: 150%;
+                margin-top: 20px;
+                font-weight: bold;
+            }
+            address{
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+                
+             }
+            .telefone {
+                flex:1;
+                width:300;
+                font-size: 120%;
+                font-style: normal;
+                margin-top: 20;
+            }
+            
+            .forms {
+                flex:1 ;
+                max-width: 250;
+                height: 230px;
+                padding:10px ;
+                margin-top: 20;
+                font-size: 100%;
+                background-color:darkgray;
+                text-align: center;
+            }
+            form input {
+                padding: 5px;
+                margin-top: 5px;
+                font-size: 80%;
+            }
+.rodape{
+    width: 100%;
+}
+footer {
+    max-width: 1200px;
+    margin: auto;
+    height:30px;
+    line-height:30px;
+    color:black;
+    text-align:center;
+    }
+.iconesocial{
+    float: right;
+}
+.iconesocial a{
+    margin-right: 10px;
+}
+        @media only screen and (max-width:720px){
+            
+            .menuinterior{
+            }
+            .menu{
+                flex-direction: column;
+            }
+            
+            .menumobile{
+                display:block;
+
+            }
+             .menu ul {
+                 display:none;
+                 flex-direction: column;
+                 position: absolute;
+                 left: 0;
+                 background-color: #FFCC29;
+                 width: 100%;
+            }
+            
+            .mini,
+            .rast1,
+            .benef,
+            address{
+                flex-direction: column;
+                
+            }
+            address,
+            .rast1,
+            .benef{
+                align-items: center;
+            }
+            
+            .titulopag{
+                text-align: center
+            }
+           
+        }
+
+        @media only screen and (max-width:523px){
+            
+            .iconesocial{
+                float: none;
+            }
+        }
+            
