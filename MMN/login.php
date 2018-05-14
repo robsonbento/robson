@@ -2,39 +2,34 @@
 session_start();
 require 'config.php';
 
-if(isset($_POST['email']) && empty($_POST['email']) == false) {
+if(!empty($_POST['email'])) {
 	$email = addslashes($_POST['email']);
-	$senha = md5(addslashes($_POST['senha']));
+	$senha = md5($_POST['senha']);
 
-	try {
-	$pdo = new PDO($dsn,$dbuser,$dbpass);
+	$sql = "SELECT id FROM usuario WHERE email = '$email' AND senha = '$senha'";
+	$sql = $pdo->query($sql);
 
-	$sql = $pdo->query("SELECT * FROM usuario WHERE email ='$email' AND senha = '$senha'");
-	if ($sql->rowCount() > 0) {
-		
-		$dado = $sql->fetch();
+	if($sql->rowCount() > 0) {
+		$sql = $sql->fetch();
 
-		$_SESSION['id'] = $dado['id'];
-
+		$_SESSION['logado'] = $sql['id'];
 		header("Location: index.php");
+		exit;
 	}
-
-}
-
-catch(PDOException $e) {
-	echo "Falhou a conexão: ".$e->getMessage();
-}
-
+	else{
+		echo"Usuario ou Senha errados!";
+	}
 }
  ?>
 
 Pagina de Login
 <form method="POST">
 	Email: <br>
-	<input type="text" name="email"><br><br>
+	<input type="email" name="email"><br><br>
 	Senha: <br>
 	<input type="password" name="senha"><br><br>
 
 	<input type="submit" value="Entrar">
+</form>
 
-</form>	
+<a href="cadastro.php">Cadastro</a>	

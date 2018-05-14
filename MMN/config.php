@@ -4,5 +4,15 @@
 	$dbuser = "root";
 	$dbpass = "";
 
+try {
+	global $pdo;
+	$pdo = new PDO($dsn,$dbuser,$dbpass);
+
+}
+catch(PDOException $e) {
+	echo "Falhou a conexão: ".$e->getMessage();
+	exit;
+}
+
 
 ?>
